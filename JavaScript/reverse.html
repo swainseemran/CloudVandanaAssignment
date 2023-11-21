@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+ </head>
+ <body>
+    <h2>Reverse every word of the sentence</h2>
+    
+    <script>
+        function main(sentence) 
+        {
+            let words = sentence.split(' ');
+            let reserveWords = words.map(function(word) {
+                return word.split('').reverse().join('');
+            });
+            let reserveInput = reserveWords.join(' ');
+            return reserveInput;
+        }
+        let inputSentence = "Have a good day !";
+        let reserveInput = main(inputSentence);
+        console.log(reserveInput);
+    </script>
+ </body>
+ </html>
